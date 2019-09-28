@@ -13,7 +13,7 @@ object PushGatewayTest {
   def main(args: Array[String]) {
     val registry = new CollectorRegistry();
 
-    val pushGateway = new PushGateway("localhost:9091")
+    val pushGateway = new PushGateway("192.168.99.194:9091")
     val g = Gauge
       .build()
       .name("test_name") // 查询专用
