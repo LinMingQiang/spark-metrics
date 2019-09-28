@@ -1,6 +1,9 @@
 Grafana + Prometheus
 
 1：安装 Grafana <br> 
+service grafana-server start
+安装饼状图 重启
+grafana-cli plugins install grafana-piechart-panel
 2：安装 Prometheus <br>
  启动：./prometheus --config.file=prometheus.yml & <br>
  配置文件 ： prometheus.xml （Prometheus采用主动拉去数据。配置的target为对方的ip和port。定时5s去拉取一次数据）<br>
