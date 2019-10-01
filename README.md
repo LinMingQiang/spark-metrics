@@ -1,5 +1,5 @@
 Grafana + Prometheus
-
+关闭 防火墙 ： sudo systemctl disable firewalld
 1：安装 Grafana <br> 
 wget https://dl.grafana.com/oss/release/grafana-6.3.6-1.x86_64.rpm
 sudo yum localinstall grafana-6.3.6-1.x86_64.rpm
@@ -23,6 +23,6 @@ grafana-cli plugins install grafana-piechart-panel
  
 5：spark 配置文件 metrics.properties
  配置 GraphiteSink 的输出地址。启动的时候带上
-./spark-shell \
---files metrics.prop \
---conf spark.metrics.conf=metrics.properties
+linux : spark-shell --files metrics.properties --conf spark.metrics.conf=metrics.properties
+windows : 
+spark-shell --files G:\intellijideaspace\zzy\samsung\spark-metrics\conf\metrics.properties --conf spark.metrics.conf=G:\intellijideaspace\zzy\samsung\spark-metrics\conf\metrics.properties
