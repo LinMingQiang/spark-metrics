@@ -1,4 +1,4 @@
-Grafana + Prometheus <br>
+## Install Grafana & Prometheus <br>
 ```
 关闭 防火墙 ： sudo systemctl disable firewalld <br>
 install Grafana <br> 
